@@ -1,5 +1,5 @@
 body {
-    background: lightgray;
+    background: white;
 }
 
 body, html {
@@ -27,7 +27,13 @@ body, html {
     border: .4rem solid black;
     text-shadow: 0 0 .5rem black;
     background: rgba(0,0,0,0.4);
-    transition: all .07s ease;
+    transition: all .07s; /* ease is the default transition-timing-function */
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #45d0dd;
+    box-shadow: 0 0 1rem #45d0dd;
 }
 
 kbd {
@@ -38,5 +44,5 @@ kbd {
 .sound {
     font-size: 1.2rem;
     letter-spacing: .1rem;
-    color: #ffc600;
+    color: #45d0dd;
 }
